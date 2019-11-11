@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="14px" viewBox="0 0 24 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Flags/UK</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Flags/UK" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flag_UK" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="24" height="14"></rect>
+            <polygon id="Path" fill="#BD0034" points="16.7907551 5 24 0.931348539 24 0 15 5"></polygon>
+            <polygon id="Path" fill="#BD0034" points="14.6175344 9 23.4153585 14 24 14 24.012812 13.5090928 16.2724001 9"></polygon>
+            <polygon id="Path" fill="#BD0034" points="0 0.928571429 7.272 5 9 5 0 0"></polygon>
+            <polygon id="Path" fill="#BD0034" points="8.32167832 9 0 13.9275362 0 14 1.46853147 14 10 9"></polygon>
+            <polygon id="Path" fill="#1A237B" points="23 0 14 0 14 5"></polygon>
+            <polygon id="Path" fill="#1A237B" points="11 0 2 0 11 5"></polygon>
+            <polygon id="Path" fill="#1A237B" points="23.9992328 5 24 2 18 5"></polygon>
+            <polygon id="Path" fill="#1A237B" points="23.9951488 9 18 9 24 12"></polygon>
+            <polygon id="Path" fill="#1A237B" points="2 14 10 14 10 10"></polygon>
+            <polygon id="Path" fill="#1A237B" points="14 14 22 14 14 10"></polygon>
+            <polygon id="Path" fill="#1A237B" points="0 9 0 12 6 9"></polygon>
+            <polygon id="Path" fill="#1A237B" points="0 5 6 5 0 2"></polygon>
+            <polygon id="Path" fill="#BD0034" points="11.0797989 0 11.0797989 5.88 0 5.88 0 8.4 11.0797989 8.4 11.0797989 14 13.3381019 14 13.3381019 8.4 23.9950141 8.4 24 5.88 13.3381019 5.88 13.3381019 0"></polygon>
+        </g>
+    </g>
+</svg>

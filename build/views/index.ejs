@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include partials/head %> 
+  <% include partials/scripts %>
+</head>
+<body>
+  <%- include partials/nav %> 
+  <div class="containerCustom">    
+    <%- include partials/header %> 
+    <%- include('pages/'+page) %>
+    <%- include partials/footer %>
+  </div>
+</body>
+</html>

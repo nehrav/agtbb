@@ -1,0 +1,190 @@
+body {background: #f9f9f9;}
+body, input, button {font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
+a {text-decoration: none;}
+strong {font-weight: 700;}
+.clear:after {content: ""; display: table; clear: both;}
+
+.greyBox {border: solid 1px #e9eae8;  background-color: #f9f9f9;}
+label.error {color:red !important;}
+
+nav {position: fixed; left:0; top:0; height:100%; width:55px; background: rgb(32,84,128);
+  background: linear-gradient(184deg, rgba(32,84,128,1) 0%, rgba(22,50,85,1) 35%);}
+nav a {display: block; text-align: center; position: relative;}
+nav a.logo {margin-top: 25px;}
+nav a.logo img {padding-bottom:15px; border-bottom: solid 2px #CBB08B; margin-top:0;}
+nav a img, nav a svg {margin:20px 0; width:24px;}
+nav a svg path {fill:#688DA8;}
+nav a.link:hover {background:#124972;}
+nav a.link.active {background: #092D50;}
+nav a.link:hover svg path, nav a.active svg path {fill:#eaf5f8;}
+nav a.active:after {left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(9, 45, 80, 0); border-left-color: #092D50; border-width: 7px; margin-top: -7px;}
+.tooltipCustom .tooltiptext {visibility: hidden; font-size:12px; width: 120px; background-color: #153253; color: #fff; text-align: center; border-radius: 3px; padding: 10px 0; position: absolute; z-index: 1; bottom: 25%; left: 130px; margin-left: -60px; opacity: 0; transition: opacity 0.3s;}
+.tooltipCustom .tooltiptext::after {content: ""; position: absolute; right: 100%; top: 50%; margin-top: -5px; border-width: 5px; border-style: solid; border-color:transparent; border-right-color: #153253;}
+.tooltipCustom:hover .tooltiptext {visibility: visible; opacity: 1;}
+
+.containerCustom {margin:25px auto 0 auto; max-width: 1250px;}
+.containerCustom header {border-bottom:solid 1px #c1c1c1; color:#20527d; font-weight: 600; margin-bottom: 50px; padding:0 0 10px 0;}
+.containerCustom header .bankLogo {line-height: 28px; float:left;}
+.containerCustom header .bankLogo img {float: left; margin-right: 12px;}
+.containerCustom header .actions {float:right; position: relative;}
+.containerCustom header .actions .refresh, .containerCustom header .actions svg.active {cursor: pointer;}
+.containerCustom header .actions img, .containerCustom header .actions svg {margin-right:15px; margin-top:4px;}
+.containerCustom header .actions svg {width:20px; vertical-align:middle;}
+.containerCustom header .actions em.active svg path {fill:#009FE2;}
+.containerCustom header .actions .notificationSet {background:#fff; display: none; font-size:10px; padding-bottom:3px; width:250px; border-radius:5px; left:37px; top:45px; position: absolute;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(102,102,102,1);
+-moz-box-shadow: 0px 0px 3px 0px rgba(102,102,102,1);
+box-shadow: 0px 0px 3px 0px rgba(102,102,102,1);
+}
+.containerCustom header .actions .notificationSet:after { bottom: 100%; left: 20%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(23, 53, 87, 0); border-bottom-color: #173557; border-width: 7px; margin-left: -7px;}
+.containerCustom header .actions .notificationSet .head {color: #fff; border-radius: 5px 5px 0 0; background: #173557; font-size: 11px; padding:10px;}
+.containerCustom header .actions .notificationSet .head span {color:#a1a1a1; float:right;}
+.containerCustom header .actions .notificationSet table {color:#a6a6a6; width:100%;}
+.containerCustom header .actions .notificationSet table td {padding:10px 7px;}
+.containerCustom header .actions .notificationSet ul {padding:0 9px;}
+.containerCustom header .actions .notificationSet li {background:#f9f9f9; margin-bottom:8px; padding:7px; border-radius: 3px; color:#646464; border:solid 1px #efefef;}
+.containerCustom header .actions .notificationSet li span {display: inline-block; width:58px;}
+.containerCustom header .actions .notificationSet li span.first {width:81px; color:#092e50;}
+.containerCustom header .actions .notificationSet li span.last {width:70px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.containerCustom header .actions .userSection {float:right; width:185px;}
+.containerCustom header .actions .userSection img {float:left; width: 40px; margin-top: -5px;} 
+.containerCustom header .actions .userSection .details span {font-size: 11px; font-weight: normal;}
+
+.containerCustom .intro {margin-left: 30px;}
+.containerCustom .intro h1 {font-size:24px; margin-bottom: 20px; font-weight: 600; color: #092e50;}
+.containerCustom .intro p {color: #7f7f7f; width: 50%; line-height: 20px; font-size: 13px;}
+
+.containerCustom .content {padding:50px; margin: 40px 0; border:solid 1px #f6f6f6; border-radius: 4px;}
+.containerCustom .content #loginForm {padding: 50px; border-radius: 4px; margin-bottom: 40px; background-image: url(../images/skyline.jpg); background-position: bottom right; background-size: contain; background-repeat: no-repeat;}
+.containerCustom .content #loginForm .fieldset {width:350px;}
+.containerCustom .content #loginForm h3 {text-transform: uppercase; margin: 0 0 30px 0; font-size:20px; color:#cbb08b; font-weight:bold;}
+.containerCustom .content #loginForm label {color:#0b3052; font-family: 'Cabin'; font-size:11px; display: block; margin:20px 0 5px 0;}
+.containerCustom .content #loginForm label.error {margin-top:0px !important;}
+.containerCustom .content #loginForm input {border:none; font-weight: 500; font-size:13px; border-bottom:solid 1px #cbb08b; margin:0 0 10px 0; width:100%; padding:10px 0; background:none;}
+.containerCustom .content #loginForm .warningInfo {display: none; color:red; margin-top:20px; font-size: 11px; line-height: 15px;}
+.containerCustom .content #loginForm .passwordWrap {position: relative;}
+.containerCustom .content #loginForm .passwordWrap img.showPassword {position: absolute; cursor: pointer; right:0; top:10px}
+.containerCustom .content #loginForm .forgotPassword { margin-top:30px;}
+.containerCustom .content #loginForm .forgotPassword a {color:#0b3052; text-decoration: underline; font-family: 'Cabin'; font-size:11px;}
+.containerCustom .content #loginForm button {border:none; float:right; color:#fff; background:#163457; border-radius: 3px; font-size: 13px; padding:5px 20px;}
+.containerCustom .content #loginForm button[disabled], .containerCustom .content #loginForm button:disabled {background:#e9e9e9; color:#bababa; cursor: default;}
+.containerCustom .content #loginForm input::-webkit-input-placeholder {color: #a0a0a0;}
+.containerCustom .content #loginForm input:-ms-input-placeholder {color: #a0a0a0;}
+.containerCustom .content #loginForm input::placeholder {color: #a0a0a0;}
+
+.containerCustom .content .wrapper {display: flex; justify-content: space-between; align-items: center; font-size: 12px;}
+.containerCustom .content .wrapper .block {border-radius:3px; padding:20px 15px 5px 15px; width:30%; max-width:300px; display: inline-block;}
+.containerCustom .content .wrapper .block h5 {font-weight: 600; color:#000; margin-bottom: 20px;}
+.containerCustom .content .wrapper .block ul li {display:inline-block; width:48.5%; text-align: center; margin:20px 0;}
+.containerCustom .content .wrapper .block ul li:nth-child(odd) {border-right:solid 1px #d8d8d8;}
+.containerCustom .content .wrapper .block ul li strong {display: block; height:24px; line-height: 24px; vertical-align: middle; margin-bottom: 10px;}
+
+.containerCustom footer {color:#153253; margin: 20px 0; font-size: 11px; text-align:right;}
+.containerCustom footer span {float: left;}
+.containerCustom footer a {color:#000; border-right:solid 1px #000; padding:0 10px;}
+.containerCustom footer a:last-child {border-right: none; padding-right: 0;} 
+
+.containerCustom h2 {color:#092e50; font-weight: 600; font-size: 20px; margin-bottom: 20px;}
+.containerCustom h2 span {color:#6c6c6c; font-size:14px; font-family: 'Cabin'; float:right; font-weight:normal;}
+.containerCustom h2 span em {font-weight:bold; color:#000;}
+.containerCustom .reports {display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.containerCustom .reports .report {border-radius: 2px; width:29%; color:#b5b5b5; padding: 14px; border:solid 1px #e4e4e4; background: #fff; font-family: 'Cabin'; font-weight: 700; font-size: 12px;}
+.containerCustom .reports .report span {margin-right: 20px; margin-top:7px; display: inline-block;}
+.containerCustom .reports .report img { opacity: 50%;}
+.containerCustom .reports .report img.reportIcon {float: right; margin-right: 10px; width:40px;} 
+.containerCustom .reports .report .reportName {color:#1d4365; font-size:14px;}
+.containerCustom .reports .report div {margin-top:40px;}
+
+.containerCustom .metrics svg {width:100%;}
+.containerCustom .seeAll {border-bottom:1px dashed #cbb08b; margin:35px 0 20px 0; font-size:13px; text-align: right; position: relative;}
+.containerCustom .seeAll a {position: absolute; font-weight: bold; padding:0 10px; top:-9px; right:0; color:#153253; background: #f9f9f9;}
+
+.containerCustom .dashboardInfo {margin-bottom: 25px;}
+.containerCustom .dashboardInfo .emptySection {float:right; line-height: 40px; height:755px; font-family: 'Cabin'; font-size:25px; color:#dedede; text-align:center; border-radius:4px; width:390px; background: #fff; border:solid 1px #d4d4d4;}
+.containerCustom .dashboardInfo .emptySection img {margin:200px 0 50px 0; width:60px;}
+.containerCustom .dashboardInfo .cardSection {float:left; width:820px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom.active {background:#1d4365; color:#fff;}
+.containerCustom .dashboardInfo .cardSection .cardCustom.active ul {background:#1d4365;}
+.containerCustom .dashboardInfo .cardSection .cardCustom.active ul li,
+.containerCustom .dashboardInfo .cardSection .cardCustom.active ul {border-color:#325472;}
+.containerCustom .dashboardInfo .cardSection .cardCustom.active .cardActions a,
+.containerCustom .dashboardInfo .cardSection .cardCustom.active table td span, 
+.containerCustom .dashboardInfo .cardSection .cardCustom.active ul li span span {color:#71c0e2;}
+
+.containerCustom .dashboardInfo .cardSection .cardCustom:nth-child(even) {margin-right:0; float:right;}
+.containerCustom .dashboardInfo .cardSection .cardCustom {width:45%; margin-bottom:25px; float:left; font-size:13px; border:solid 1px #efefef; cursor: pointer; background:#fff; border-radius:5px; padding:12px; font-family: 'Cabin'; font-weight: 700;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .top {margin-bottom:12px; padding-top:12px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .top img {margin-right:10px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .top div {float:left; width:50%;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .top .more {margin:0; float:right;}
+.containerCustom .dashboardInfo .cardSection .cardCustom table {width:100%;}
+.containerCustom .dashboardInfo .cardSection .cardCustom table td {padding:10px}
+.containerCustom .dashboardInfo .cardSection .cardCustom table td span, .containerCustom .dashboardInfo .cardSection .cardCustom ul li span span {color:#828282;}
+.containerCustom .dashboardInfo .cardSection .cardCustom table td.right {text-align: right;}
+.containerCustom .dashboardInfo .cardSection .cardCustom table td.balance {font-size:14px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul {border:solid 1px #eeeeee; margin-top:10px; border-radius: 3px; border-bottom:none; background: #f9f9f9;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li {padding:10px; border-bottom:solid 1px #eeeeee;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li span.price {float: right;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li em {color:#F8A701; display: none; font-weight:normal; margin-left:7px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li em.red {color:#fb5d5d}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li em.green {color:#88d463}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li i {height: 5px; margin-right:8px; width: 5px; border-radius: 50%; display: inline-block;}
+.containerCustom .dashboardInfo .cardSection .cardCustom ul li i.orange {background-color: #ff0000;}
+
+.containerCustom .dashboardInfo .cardSection .cardCustom .cardActions {color:#9a9a9a; text-align: right; font-size: 11px; margin-top:15px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .cardActions a {border-right:solid 1px #eee; margin-right:15px; padding-right:15px;}
+.containerCustom .dashboardInfo .cardSection .cardCustom .cardActions a:last-child {margin:0; border:none; padding:0;}
+
+.containerCustom #transactionChart {width:100%; font-size: 14px; border-collapse: separate; border-spacing:0 10px;}
+.containerCustom #transactionChart tbody tr {background:#fff; border:solid 1px #efefef; border-spacing: 10px; font-family: 'Cabin';}
+.containerCustom #transactionChart td {border-top:solid 1px #efefef; border-bottom:solid 1px #efefef;}
+.containerCustom #transactionChart thead th {color:#868686;}
+.containerCustom #transactionChart td,
+.containerCustom #transactionChart th {padding:20px 15px;}
+.containerCustom #transactionChart tbody tr td span {color:#a0a0a0; display: inline-block; font-size:12px; margin-left:2px; margin-bottom:5px}
+.containerCustom #transactionChart tbody tr td:first-child {border-left:solid 1px #efefef; font-size:15px; border-radius:5px 0 0 5px; }
+.containerCustom #transactionChart tbody tr td:last-child {border-right:solid 1px #efefef; border-radius:0 5px 5px 0;}
+.containerCustom #transactionChart td img {cursor: pointer; margin-right:25px;}
+.containerCustom #transactionChart td img:last-child {margin:0;}
+
+.containerCustom #transactionChart tbody tr:hover {background: #1d4365;}
+.containerCustom #transactionChart tbody tr:hover td {color:#fff;}
+span.orange {color:#f48d1a !important;}
+span.green {color:#86d56f !important;}
+span.red {color:#fe7676 !important;}
+span.blue {color:#35c3ff !important;}
+span.grey {color:#ccc !important;}
+
+.containerCustom .tokenActions {padding-bottom:20px;}
+.containerCustom .tokenActions #filterSection {border:none; font-size:14px; float:left; width:400px;}
+.containerCustom .tokenActions #filterSection li:first-child a {padding-left:0}
+.containerCustom .tokenActions #filterSection li a {color:#092e50; outline:0; background:none; border:none; padding-right:1.5em;}
+.containerCustom .tokenActions #filterSection li a.active {font-weight: bold; color:#009FE2;}
+.containerCustom .tokenActions .otherActions {float:right; font-size:12px; color:#2e2e2e; width:350px; text-align: right;}
+.containerCustom .tokenActions .otherActions .sendNew {color:#fff; margin-right:20px; background:#649628; padding:8px 16px; font-weight:600; font-size:12px; border-radius:20px;}
+.containerCustom .tokenActions .otherActions select {margin-left:10px; width:70px; border:none;}
+
+#exampleModal .modal-dialog {max-width:700px;}
+#exampleModal .modal-dialog h2 {margin:15px 0 15px 33px;}
+#exampleModal .modal-body {background:#f9f9f9; padding:0;}
+#exampleModal .modal-body .topSec {font-family: 'Cabin'; padding:0px 50px 50px 50px;}
+#exampleModal .modal-body .topSec table {width:100%;}
+#exampleModal .modal-body .topSec .subhead {color:#838383;}
+#exampleModal .modal-body .topSec .label {font-size:10px; color:#ababab;}
+#exampleModal .modal-body .topSec input {border:solid 1px #e5e5e5; width:223px; border-radius:3px; background: #fff; color:#000; padding:6px;}
+
+#exampleModal .modal-body .topSec .details {background:#fff; display: none; width:205px; border:solid 1px #efefef; padding:15px;}
+#exampleModal .modal-body .topSec .details .flag {margin-bottom:15px; font-size:14px;}
+#exampleModal .modal-body .topSec .details .flag img {margin-right:6px; width:20px;}
+#exampleModal .modal-body .topSec .details ul {font-size:13px;}
+#exampleModal .modal-body .topSec .details ul li {color:#828282; list-style-type: none; margin-bottom:10px;}
+#exampleModal .modal-body .topSec .details ul li span {color:#000; display: inline-block; width:90px;}
+#exampleModal .modal-body .topSec .details .address {background: #f9f9f9; border: solid 1px #eee; padding: 10px; border-radius: 4px; color: #828282; font-size: 13px;}
+#exampleModal .modal-body .topSec .details .address span {display: block; color:#000; margin-bottom:5px;}
+
+#exampleModal .modal-body .bottomSec {background:#163354; color:#fff; padding:20px 0 10px 0;}
+#exampleModal .modal-body .bottomSec input[type=text] {background:#2D4765; border-radius:5px; width:250px; border:none; padding: 5px 5px 5px 10px; color: #d4e8f8;}
+#exampleModal .modal-body .bottomSec input[type=button] {background: #fa6a6a; cursor: pointer; color: #fff; border: none; font-size: 13px; padding: 8px 10px; border-radius: 4px; margin-right: 10px;}
+#exampleModal .modal-body .bottomSec input.approvalBtn {background: #009FE2;}
+#exampleModal .modal-body .bottomSec table {width:80%; margin:auto; border-collapse: separate; border-spacing:0 15px;;}

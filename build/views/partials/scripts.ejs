@@ -1,0 +1,25 @@
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/xlsx.core.min.js"></script>
+<script src="js/js.cookie.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/config.js"></script>
+<script src="js/utility.js"></script>
+<script src="js/main.js"></script>
+<script src="socket.io/socket.io.js"></script> 
+<script>
+  $(function () {
+    var socket = io(); 
+    var bank = Cookies.get('userBank');
+
+    socket.on('addNew', function(msg) {
+      console.log('client ', msg, bank);
+      if(msg != bank)
+        setTimeout(function () {
+          window.location.href= '/transfers';
+        }, 2000)
+        
+      console.log('addNew client = ', {msg});
+    });
+  });
+</script>

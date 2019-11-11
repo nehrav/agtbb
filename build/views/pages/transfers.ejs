@@ -1,0 +1,159 @@
+<h2>Token Transfers </h2>
+<div class="tokenActions clear">
+  <ul id="filterSection" class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">All Transfers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-type="inbound" href="#">Outbound </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-type="outbound" href="#">Inbound</a>
+      </li>
+    </ul>
+  <div class="otherActions">
+    <a class="sendNew" data-toggle="modal" href="#" data-target="#exampleModal">+ Send New</a>
+    Currency :
+    <select id="selectCurrency">
+      <option value="">Select</option>
+      <option value="GBP">GBP</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="CNY">CNY</option>
+      <option value="AED">AED</option>
+    </select>
+  </div>
+</div>
+
+<table data-toggle="bootstrap-table" id="transactionChart" data-sortable="true" class="">
+  <thead>
+    <tr>
+      <th width="13%">Sender</th>
+      <th width="13%">Beneficiary</th>
+      <th width="12%">Transaction ID</th>
+      <th width="14%" data-field="amount" data-sortable="true">Amount</th>
+      <!-- <th width="8%" data-field="currency" data-sortable="true">Currency</th> -->
+      <th width="15%" data-field="amount" data-sortable="true">Transaction Time </th>
+      <th width="8%">Type</th>
+      <th width="7%">Status</th>
+      <th width="10%"></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Send tokens</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="topSec">
+          <table>
+            <tr>
+              <td width="48%">
+                <table>
+                  <tr>
+                    <td class="subhead">Sender Account</td>
+                  </tr>
+                  <tr>
+                    <td height="15"></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Insert Account IBAN</td>
+                  </tr>
+                  <tr>
+                    <td height="5"></td>
+                  </tr>
+                  <tr>
+                    <td><input data-show="senderDetails" data-ref="senderRef" type="text" value="IBAN" name="senderIBAN" class="iban" /></td>
+                  </tr>
+                  <tr>
+                    <td height="20"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="senderDetails" class="details">
+
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td><img style="margin:100px 30px 0 0" src="images/icons/more.svg"></td>
+              <td width="48%">
+                <table>
+                  <tr>
+                    <td class="subhead">Beneficiary Account</td>
+                  </tr>
+                  <tr>
+                    <td height="15"></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Insert Account IBAN</td>
+                  </tr>
+                  <tr>
+                    <td height="5"></td>
+                  </tr>
+                  <tr>
+                    <td><input data-show="beneficiaryDetails" data-ref="receiverRef" type="text" value="IBAN" name="beneficiaryIBAN" class="iban" /></td>
+                  </tr>
+                  <tr>
+                    <td height="20"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="beneficiaryDetails" class="details">
+
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bottomSec">
+          <table>
+            <tr>
+              <td width="40%">Send Amount</td>
+              <td><input id="senderAmount" type="text" value="" /></td>
+            </tr>
+            <tr>
+              <td>Purpose</td>
+              <td><input type="text" id="purpose" value="Invoice" /></td>
+            </tr>
+            <tr>
+              <td>Sender Ref.</td>
+              <td><input id="senderRef" type="text" /></td>
+            </tr>
+            <tr>
+              <td>Receiver Ref.</td>
+              <td><input id="receiverRef" type="text" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="10"></td> 
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="button" class="clearBtn" data-dismiss="modal" value="Clear Request" /> 
+                <input type="button" class="approvalBtn" value="Send for Approval" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
